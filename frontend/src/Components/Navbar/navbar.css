@@ -1,0 +1,313 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  /* background: url('../Assets/13.png') no-repeat center center fixed; */
+  /* background-size: cover; */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Change to space-between */
+  background-color: rgba(11, 11, 11, 0.9);
+  color: white;
+  height: 100px;
+  padding: 0 50px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease-in-out;
+  animation: slideIn 1s ease-in-out, colorChange 5s infinite;
+}
+
+nav ul:hover {
+  background-color: rgba(11, 11, 11, 0.8);
+}
+
+nav ul li {
+  padding: 14px 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li.logo1 {
+  display: flex;
+  align-items: center;
+}
+
+/* nav ul li.logo1 img {
+  width: 95px;
+  vertical-align: middle;
+  height: 95px;
+} */
+
+nav ul li h1, nav ul li h2 {
+  display: inline-block;
+  margin: 0;
+  padding-left: 10px;
+  font-weight: 300;
+  font-size: 30px;
+  height: auto;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li h1:hover, nav ul li h2:hover {
+  color: #e5e5e5;
+  cursor: pointer;
+}
+
+nav ul li.auth {
+  margin-left: auto;
+}
+
+nav ul li.auth a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  font-size: 25px;
+  border-radius: 5px;
+}
+
+.logi {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the logi content */
+  flex: 1; /* Allow it to take available space */
+}
+
+.logi img {
+  width: 150px;
+  height: auto;
+}
+
+.logi h1 {
+  color: rgb(234, 222, 7);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 200px;
+  font-size: 50px;
+  transition: color 0.3s ease-in-out;
+  padding-left: 100px;
+  animation: solaroofAnimation 5s infinite;
+}
+
+.logi h1 img {
+  font-size: 24px;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -10px;
+  padding-right: 10px;
+  padding-left: 5px;
+}
+
+.logi h1:hover {
+  color: #e5e5e5;
+}
+
+.auth {
+  display: flex;
+  align-items: center;
+}
+
+.auth a {
+  color: rgb(21, 20, 20);
+  text-decoration: none;
+  padding: 5px 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* .auth a:hover {
+  background-color: #575757;
+  color: #f4f4f4;
+} */
+
+.auth img {
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+  padding: 5px;
+  align-items: center;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+  /* padding-right: 100px; */
+}
+
+/* .auth Link .login-btn {
+  cursor: pointer;
+} */
+
+.auth img:hover {
+  transform: scale(1.1);
+}
+.auth h1{
+   cursor: pointer;
+   color:rgb(255, 255, 255);
+   padding-right: 70px;
+}
+.auth h1 .logo2{
+  padding-right: 200px;
+  color: green;
+}
+.auth button {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 25px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  /* padding-bottom: 20px; */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.auth .logi a {
+  color: rgb(234, 222, 7);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 200;
+  font-size: 60px;
+  transition: color 0.3s ease-in-out;
+  padding-left: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+/* @keyframes colorChange {
+  0% {
+    background-color: rgba(11, 11, 11, 0.9);
+  }
+  50% {
+    background-color: rgba(25, 124, 216, 0.9);
+  }
+  100% {
+    background-color: rgba(11, 11, 11, 0.9);
+  }
+} */
+
+/* @keyframes solaroofAnimation {
+  0% {
+    transform: translateX(0) scale(1);
+  }
+  25% {
+    transform: translateX(-20px) scale(1.1);
+  }
+  50% {
+    transform: translateX(0) scale(1.2);
+  }
+  75% {
+    transform: translateX(20px) scale(1.1);
+  }
+  100% {
+    transform: translateX(0) scale(1);
+  }
+} */
+
+
+.logi h1 {
+  display: inline-block;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 200;
+  font-size: 60px;
+  transition: color 0.3s ease-in-out;
+  padding-left: 50px;
+  text-align: center;
+  justify-content: center;
+}
+
+.logi h1 .letter-s {
+  color:yellow;
+}
+
+.logi h1 .letter-o1 {
+  color: orange;
+}
+
+.logi h1 .letter-l {
+  color: yellow;
+}
+
+.logi h1 .letter-a {
+  color:orange;
+}
+
+.logi h1 .letter-r {
+  color: yellow
+  ;
+}
+
+.logi h1 .letter-o2 {
+  color: orange;
+}
+.logi h1 .letter-o3 {
+  color: yellow;
+}
+
+.logi h1 .letter-f {
+  color: orange;
+}
+
+
+
+.logo3 img {
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+}
+
+ .logo1 img{
+  width:300px;
+  height:90px;
+}
+nav ul li .center h1 .logo2 {
+  flex-grow: 1;
+  text-align: center;
+   /* justify-content: center; */
+  /* padding-right: 80px;  */
+}
+.center h1{
+   font-size: 50px;
+   flex:1;
+   text-align: center;
+    padding-right: 350px;
+}
+/* .logo2 {
+  font-size: 24px; 
+  font-weight: bold;
+}
+
+.auth button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.auth button:hover {
+  background-color: #0056b3;
+} */
+
+.center button h3{
+  cursor: pointer;
+}

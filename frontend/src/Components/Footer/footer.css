@@ -1,0 +1,79 @@
+/* src/Footer.css */
+
+footer {
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  position: relative;
+  z-index: 10;
+  transition: background-color 0.3s ease-in-out;
+}
+
+footer:hover {
+  background-color: #444;
+}
+
+#socials-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#socials-container a {
+  margin: 0 10px;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+
+}
+
+#socials-container a:hover {
+  transform: scale(1.2);
+}
+
+
+#socials-container img {
+  width: 60px;
+  height: 60px;
+  vertical-align: middle;
+  /* transition: filter 0.3s ease-in-out; */
+  /* background-color: white; */
+  /* color: white; */
+}
+
+#socials-container img:hover {
+  filter: brightness(1.5);
+}
+
+footer p {
+  font-size: 16px;
+  margin-top: 10px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 15px;
+  }
+
+  #socials-container {
+    flex-wrap: wrap;
+  }
+
+  #socials-container a {
+    margin: 5px;
+  }
+}

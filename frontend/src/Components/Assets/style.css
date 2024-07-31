@@ -1,0 +1,154 @@
+/* Basic styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background: url('13.png');
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    gap: 300px;
+  }
+  
+  nav ul li {
+    padding: 14px 20px;
+  }
+  
+  nav ul li.logo1 img {
+    width: 50px;
+    vertical-align: middle;
+  }
+  
+  nav ul li h1, nav ul li h2 {
+    display: inline-block;
+    margin: 0;
+    padding-left: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  nav ul li h1:hover, nav ul li h2:hover {
+    background-color: #575757;
+    cursor: pointer;
+  }
+  
+  nav ul li.auth {
+    margin-left: auto;
+  }
+  
+  nav ul li.auth a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  nav ul li.auth a.login-btn:hover {
+    background-color: #575757;
+  }
+  nav ul li.auth a.signup-btn:hover {
+    background-color: #575757;
+  }
+  .form-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .table-container {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.table-container h2 {
+    margin-top: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+  form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  form input, form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  form button[type="reset"] {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  form button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #socials-container {
+    margin-top: 10px;
+  }
+  
+  #socials-container a {
+    margin: 0 10px;
+    display: inline-block;
+  }
+  
+  #socials-container img {
+    width: 30px;
+    vertical-align: middle;
+  }
+  

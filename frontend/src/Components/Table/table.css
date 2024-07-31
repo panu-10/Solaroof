@@ -1,0 +1,287 @@
+/* table.css */
+
+.table-container {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    padding-right: 70px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    width: 100%;
+    flex: 1;
+    overflow-x: auto;
+  }
+  
+  .table-container:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    transform: scale(1.01);
+  }
+  /* #referral-table th:nth-child(2), #referral-table td:nth-child(2),
+#referral-table th:nth-child(3), #referral-table td:nth-child(3) {
+  width: 1000px; 
+} */
+  .table-container h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    padding-bottom: 8px;
+    border-bottom: 1px solid black;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 15px;
+    text-align: left;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  th {
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  th:hover {
+    background-color: #45a049;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #fff;
+  }
+  
+  tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    th, td {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    th {
+      font-size: 16px;
+    }
+  
+    /* Adjust column width for smaller screens */
+    table th.name, table td.name,
+    table th.email, table td.email {
+      width: 150px; /* Adjust the width for smaller screens */
+    }
+  }
+  
+  .pagination {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .pagination button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+  
+  .pagination button:hover {
+    background-color: #45a049;
+  }
+  
+  .pagination button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .search-bar {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 16px;
+    width: 200px; /* Adjust width as needed */
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .search-bar:focus {
+    outline: none;
+    border-color: black; /* Example of changing border color on focus */
+  }
+  
+
+
+  #referral-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+/*   
+  #referral-table th, #referral-table td {
+    border: 1px solid #ddd;
+    padding: 15px; 
+    text-align: left;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+  } */
+  
+  #referral-table th {
+    background-color: #4CAF50;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  #referral-table th:nth-child(3), #referral-table td:nth-child(3), #referral-table th:nth-child(6), #referral-table td:nth-child(6)  {
+    width: 200px; 
+    text-align: left;
+    white-space: nowrap; /* Prevent text wrap */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Show ellipsis (...) for overflow */
+  }
+  #referral-table th:nth-child(2), #referral-table td:nth-child(2) {
+    white-space: nowrap; /* Prevent text wrap */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Show ellipsis (...) for overflow */
+  }
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .pagination-controls {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+  }
+  
+  .pagination .pagination-controls button {
+    font-size: 23px;
+  }
+  
+  .pagination button {
+    padding: 5px 10px;
+    cursor: pointer;
+  
+  }
+  
+  .pagination-info {
+    font-size: 16px;
+    padding-right: 1px;
+  }
+
+  .toggle-columns button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 620px; /* Add some right margin for spacing */
+  }
+  
+  /* .toggle-columns button:hover {
+    background-color: #0056b3;
+  } */
+
+  .toggle-columns .hide {
+    margin-left: 630px;
+  }
+  .toggle-columns {
+    margin-bottom: 10px;
+    padding-left: 800px;
+  }
+  
+/* table.css */
+
+.toggle-columns {
+  margin-bottom: 10px;
+}
+
+.toggle-icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color:white; /* Default background color */
+  color: white; /* Icon color */
+  font-size: 20px; /* Adjust icon size */
+  line-height: 30px; /* Center icon vertically */
+  text-align: center; /* Center icon horizontally */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-icon img {
+  width: 40px; /* Adjust image size */
+  height: 40px; /* Adjust image size */
+  vertical-align: middle; /* Align image vertically */
+  /* padding-top: 100px; */
+  padding-left: 60px;
+}
+
+.toggle-icon.expanded {
+  background-color:white; /* Background color when expanded */
+  color: white;
+}
+
+.download-button {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-left: 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 25px;
+  position: relative;
+  top: 5px;
+
+}
+.download-button img{
+  /* padding-top: 5px; */
+  margin-left: 10px;
+  width: 25px;
+  height: 25px;
+  position: relative;
+    top: 4px; /* Moves the image down */
+
+}
+.download-button:hover {
+  background-color: #45a049;
+}
+  

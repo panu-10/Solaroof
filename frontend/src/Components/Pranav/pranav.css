@@ -1,0 +1,256 @@
+/* .verdict-table-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .verdict-table-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .verdict-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+  
+  .verdict-table th,
+  .verdict-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .verdict-table th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .verdict-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .verdict-table tr:hover {
+    background-color: #ddd;
+  }
+   */
+
+   .verdict-table-container {
+    margin: 20px;
+    padding: 20px;
+    margin-top: 1px;
+    padding-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    width: 600px;
+    height: 530px;
+    margin-right: 10px;
+  }
+  
+  .verdict-table-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .verdict-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+  
+  .verdict-table th, .verdict-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .verdict-table th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .verdict-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .verdict-table tr:hover {
+    background-color: #ddd;
+  }
+  
+  .verdict-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: black;
+    color: white;
+  }
+
+  .pagination-controls {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .pagination-button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .pagination-button.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .pagination-button:hover {
+    background-color: #ddd;
+  }
+
+  .verdict-table-container {
+    position: relative;
+  }
+  
+  .pagination-controls {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .pagination-button {
+    margin: 0 2px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .pagination-button.active {
+    font-weight: bold;
+  }
+  
+  .navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 0;
+    padding: 0 20px;
+  }
+  
+  .navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 0;
+    padding: 10px 20px;
+  }
+  
+  .prev-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    /* margin-right: auto;  */
+    margin-left: -5px;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+  
+  .next-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 30px; 
+    background-color: green;
+     color: white;
+     font-size: 20px;
+     border: 2px solid black;
+     border-radius: 5px;
+  }
+  
+  .prev-button:disabled,
+  .next-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  .sunil-download-button1 {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border: 2px solid black;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    margin-left: 300px;
+   /* margin-bottom: 20px; */
+  
+  }
+  
+  .sunil-download-button1:hover {
+    background-color: white;
+    color: black;
+  }
+  .sunil-download-button1 img{
+    /* padding-top: 5px; */
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+    position: relative;
+      top: 2px;
+}
+
+.search-input {
+  padding: 5px;
+  font-size: 16px;
+  width: 200px;
+}
+.sunil-controls {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Align items vertically */
+}
+
+.sunil-download-button1 {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 10px;
+  margin-left: 10px; /* Adjust as needed */
+  border: 2px solid black;
+  background-color: green;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  margin-left: 90px;
+}
+
+.sunil-download-button1:hover {
+  background-color: white;
+  color: black;
+}
+
+.sunil-download-button1 img {
+  margin-left: 10px;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: 2px;
+}
+
+.sunil-search-bar {
+  padding: 5px;
+  font-size: 16px;
+  width: 200px; /* Adjust width as needed */
+  margin-left: 10px; /* Adjust margin to separate from button */
+}

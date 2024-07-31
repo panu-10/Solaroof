@@ -1,0 +1,287 @@
+.sunilp-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  overflow-x: auto; /* Ensure container can scroll horizontally if needed */
+  margin-left: 10px;
+  cursor: pointer;
+  word-wrap: break-word;
+  width: 1200px;
+}
+
+.sunil-table-container:hover {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  transform: scale(1.01);
+}
+
+.sunil-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0;
+  white-space: nowrap;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  padding-bottom: -15px;
+  max-width: 100%; /* Ensure header fits within the container */
+  width: 100%; /* Adjust width to 100% to fit the container */
+  height: 100px;
+  margin-left: 10px;
+  border-bottom: none; /* Remove the black line */
+}
+
+.sunil-controls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 100%;
+  padding-top: 5px;
+}
+
+.sunil-search-bar {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 300px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.sunil-search-bar:focus {
+  outline: none;
+  border-color: black;
+}
+
+.sunil-download-button {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-left: 10px;
+  border: 2px solid black;
+  background-color: green;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+}
+
+.sunil-download-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.sunil-table-wrapper {
+  overflow-x: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+  width: 100%; /* Ensure wrapper fits within the container */
+}
+
+.sunil-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto; /* Allow columns to expand based on content */
+}
+
+.sunil-th, .sunil-td {
+  padding: 12px 20px;
+  text-align: left;
+  border-bottom: 1px solid black;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sunil-th {
+  background-color: black;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+button.sunil-button {
+  color: white;
+  background-color: green;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button.sunilp-reject-button:hover {
+  background-color: #c62828;
+}
+/* Red color for Reject button */
+button.sunilp-reject-button {
+  color: white;
+  background-color: #e53935;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button.sunilp-reject-button:hover {
+  background-color: #c62828;
+}
+
+/* Remove hover effect on sunil-th */
+.sunil-th {
+  cursor: default;
+}
+
+.sunil-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+}
+
+.sunil-pagination-controls button {
+  padding: 6px 12px;
+  border: 2px solid black;
+  background-color: green;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.sunil-pagination-controls button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.sunil-pagination-controls button:hover:not(:disabled) {
+  background-color: white;
+  color: black;
+}
+
+.sunil-pagination-info {
+  font-size: 16px;
+}
+
+.sunil-button {
+  margin: 0 5px;
+  padding: 6px 12px;
+  border: 2px solid black;
+  background-color: green;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.sunil-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.sunil-td button {
+  display: inline-block;
+  margin: 0 2px;
+}
+
+.sunil-td button:last-child {
+  margin-right: 0;
+}
+
+
+.sunil-accept-button {
+  padding: 6px 12px;
+  margin-right: 5px;
+  background-color:green; /* Red background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sunil-accept-button:hover {
+  background-color:green; /* Darker red on hover */
+}
+
+.sunil-reject-button {
+  padding: 6px 12px;
+  margin-right: 5px;
+  background-color:red; /* Green background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sunil-reject-button:hover {
+  background-color:red; /* Darker green on hover */
+}
+
+.sunil-preview-button {
+  background-color: gray;
+  color: white;
+  border: 2px solid  black;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer; /* Change cursor to pointer */
+
+}
+
+.sunil-preview-button:hover {
+  opacity: 0.8;
+}
+
+.sunil-download-button img{
+    /* padding-top: 5px; */
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+    position: relative;
+      top: 4px; /* Moves the image down */
+}
+
+/* Add these styles to your existing CSS file or create a new one */
+
+.sunil-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.sunil-pagination-button {
+  padding: 8px 16px;
+  margin: 0 5px;
+  cursor: pointer;
+  background-color:green;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  transition: background-color 0.3s ease;
+  font-size: 20px;
+}
+
+.sunil-pagination-button:hover {
+  background-color: green;
+}
+
+.sunil-pagination-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.sunil-page-info {
+  margin: 0 10px;
+  font-size: 14px;
+  color: #555;
+}
